@@ -1,4 +1,6 @@
 # sakumon
+# Author : Daichi SEKIKAWA 
+# Contact : s139584y(at)st.go.tuat.ac.jp
 
 それぞれのファイルの内容
 

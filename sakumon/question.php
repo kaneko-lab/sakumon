@@ -11,7 +11,7 @@
 
 
 <?php
-  $pdo = new PDO("mysql:dbname=sakumon3", "root", "2Flyand8Fr");
+	$pdo = new PDO("mysql:dbname=sakumon3",DB_USER, DB_PW);
   $st = $pdo->query("SELECT * FROM question_list");
   while ($row = $st->fetch()) {
     $no = htmlspecialchars($row['no']);

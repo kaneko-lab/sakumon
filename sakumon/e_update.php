@@ -1,7 +1,7 @@
 <?php
   $current = htmlspecialchars($_GET['current']);
   $next = htmlspecialchars($_GET['next']);
-  $pdo = new PDO("mysql:dbname=sakumon3", "root", "2Flyand8Fr");
+  $pdo = new PDO("mysql:dbname=sakumon3",DB_USER, DB_PW);
   $st = $pdo->prepare("SELECT * FROM suggestion WHERE current=? and next=?");
   $st->execute(array($current, $next));
   $row = $st->fetch();

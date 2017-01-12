@@ -13,7 +13,7 @@
   $current = htmlspecialchars($_POST['no']);
   $procedure = array("作問開始！", "参考資料を見る", "問題にする内容をまとめる", "問題文の作成", "解答(選択肢)の作成", "解説の作成", "見直し", "提出！");
 
-  $pdo = new PDO("mysql:dbname=sakumon3", "root", "2Flyand8Fr");
+  $pdo = new PDO("mysql:dbname=sakumon3",DB_USER, DB_PW);
   $st = $pdo->query("SELECT * FROM suggestion where current=$current ORDER BY next ASC");
   while ($row = $st->fetch()) {
     $purpose = htmlspecialchars($row['purpose']);

@@ -1,4 +1,5 @@
-# sakumon
+# 作問システム
+
 # Author : Daichi SEKIKAWA 
 # Contact : s139584y(at)st.go.tuat.ac.jp
 

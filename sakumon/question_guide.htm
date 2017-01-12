@@ -1,0 +1,33 @@
+<html>
+<head>
+<script Language="JavaScript"><!--
+function dispText()
+{
+	document.getElementById("myText").innerHTML 
+	= "<h2>現在の工程から目的別の次の工程への遷移例を提示しますか？</h2><form action=\"expert_way.php\" method=\"post\" target=\"up_left\"><input type=\"hidden\" name=\"no\" value=\"3\"><input type=\"submit\" name=\"send\" value=\"はい\" onclick=\"submit();\"></form>";
+}
+// -->
+</script>
+</head>
+
+<h1>問題文の作成</h1>
+
+問題文、必要があればソースプログラムなどを入力していきましょう。<br>
+文章問題、プログラムの穴埋めなど選択式に出来れば形式は任意です。<br><br>
+
+<h3>例1：以下は1から10まで出力するプログラム片である。□に当てはまるものを選べ<br>
+for(i=1;i<10;□){<br>
+　printf("%d ",i);<br>
+}<br>
+(答：i++)<br>
+</h3>
+<h3>例2：i++;のように値を1ずつ大きくしていくことを(　　)という。<br>
+(答：インクリメント)<br>
+</h3>
+
+
+<body onLoad="setTimeout('dispText()',1000*180)">
+<div id="myText">
+</div>
+</body>
+</html>

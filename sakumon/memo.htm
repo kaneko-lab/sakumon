@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    function downloadFile() {
+        var filename = "memo";
+        var text = document.getElementById("text").value;
+        console.log("filename:");
+        console.log(filename);
+        console.log("text:");
+        console.log(text);
+        var blob = new Blob([text], {type: "text/plain"});
+        var url = window.URL.createObjectURL(blob);
+        document.getElementById("download-link").href = url;
+        document.getElementById("download-link").download = filename;
+    }
+</script>
+
+<h2>メモ欄</h2>
+
+ご自由にお使いください。<br>
+使用後は保存をお願いします。<br><br>
+
+<a href=# id="download-link" onclick="downloadFile();">保存</a><br>
+<textarea id="text" cols="60" rows="100"></textarea>
+

@@ -1,0 +1,35 @@
+<html>
+<head>
+<script language="JavaScript"><!--
+function printData(txt)
+{
+	document.question.rData.value = txt;
+}
+function printData1(txt1, txt2, txt3, txt4)
+{
+	document.question.choice1.value = txt1;
+	document.question.choice2.value = txt2;
+	document.question.choice3.value = txt3;
+	document.question.choice4.value = txt4;
+}
+// --></script>
+</head>
+
+<body>
+<h3>解説を作りながら問題、解答を見られるように自動的にコピーされます。</h3>
+<h3>問題</h3>
+<form name="question">
+<textarea name="rData" cols="60" rows="15" readonly="readonly"></textarea><br>
+<h3>選択肢</h3>
+①
+<textarea name="choice1" cols="60" rows="5" readonly="readonly"></textarea><br><br>
+②
+<textarea name="choice2" cols="60" rows="5" readonly="readonly"></textarea><br><br>
+③
+<textarea name="choice3" cols="60" rows="5" readonly="readonly"></textarea><br><br>
+④
+<textarea name="choice4" cols="60" rows="5" readonly="readonly"></textarea><br><br>
+</form>
+</body>
+</html>
+

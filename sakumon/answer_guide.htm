@@ -1,0 +1,21 @@
+<html>
+<head>
+<script Language="JavaScript"><!--
+function dispText()
+{
+	document.getElementById("myText").innerHTML 
+	= "<h2>現在の工程から目的別の次の工程への遷移例を提示しますか？</h2><form action=\"expert_way.php\" method=\"post\" target=\"up_left\"><input type=\"hidden\" name=\"no\" value=\"4\"><input type=\"submit\" name=\"send\" value=\"はい\" onclick=\"submit();\"></form>";
+}
+// -->
+</script>
+</head>
+
+<h1>解答の作成</h1>
+
+選択肢を4択で入力し、その中で正解のものを下のラジオボタンから選択しましょう。<br><br>
+
+<body onLoad="setTimeout('dispText()',1000*180)">
+<div id="myText">
+</div>
+</body>
+</html>

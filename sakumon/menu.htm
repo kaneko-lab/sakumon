@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<title>メニューページ</title>
+</HEAD>
+<BODY>
+<h1>メニュー</h1>
+
+問題を作る<br>
+<a href="javascript:void(0)" onClick="parent.left.location.href='menu_pose_guide.htm'; parent.right.location.href='form.php'; parent.up_left.location.href='start_guide.htm'">
+ガイドあり</a>
+<a href="javascript:void(0)" onClick="parent.left.location.href='menu_pose.htm'; parent.right.location.href='form.php'; parent.up_left.location.href='start.htm'">
+ガイドなし</a>
+<br><br>
+
+作った問題を見る<br>
+<a href="question.php" target="right">問題のみ</a>
+<a href="question_list.php" target="right">問題・解答、解説</a><br><br><br>
+
+講義資料を見る<br>
+(別タブが開きます)<br>
+<form action="2016prks/pdf_read.php" method="post" style="display: inline" target="_blank">
+<input type="hidden" name="number" value="6">
+<input type="submit" value="6">
+</form>
+
+<form action="2016prks/pdf_read.php" method="post" style="display: inline" target="_blank">
+<input type="hidden" name="number" value="7">
+<input type="submit" value="7">
+</form>
+
+<form action="2016prks/pdf_read.php"method="post" style="display: inline" target="_blank">
+<input type="hidden" name="number" value="8">
+<input type="submit" value="8">
+</form>
+
+<form action="2016prks/pdf_read.php" method="post" style="display: inline" target="_blank">
+<input type="hidden" name="number" value="9">
+<input type="submit" value="9">
+</form>
+
+<br>
+
+</BODY>
+</HTML>

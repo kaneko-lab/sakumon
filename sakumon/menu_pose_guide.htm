@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<title>メニューページ</title>
+</HEAD>
+<BODY>
+<h1>作問メニュー</h1>
+<h2><font color="red">ブラウザの更新ボタンを押さないように気を付けてください</font></h2>
+
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br>
+
+問題を作る(ガイドあり)<br><br>
+
+<u>作問開始</u><br><br>
+
+<a href="javascript:void(0)" onClick="parent.up_left.location.href='concept_guide.htm'; parent.right.location.href='form.php#concept'">
+問題の内容をまとめる</a><br><br>
+<a href="javascript:void(0)" onClick="parent.up_left.location.href='question_guide.htm'; parent.right.location.href='form.php#question'">
+問題文の作成</a><br><br>
+<a href="javascript:void(0)" onClick="parent.up_left.location.href='answer_guide.htm'; parent.right.location.href='form.php#answer'">
+解答の作成</a><br><br>
+<a href="javascript:void(0)" onClick="parent.up_left.location.href='study_guide.htm'; parent.right.location.href='form.php#study'">
+解説の作成</a><br><br>
+<a href="javascript:void(0)" onClick="parent.up_left.location.href='refer.htm'; parent.right.location.href='form.php#refer'">
+参考資料の記入</a><br><br><br>
+
+<a href="javascript:void(0)" onClick="parent.up_left.location.href='check_guide.htm'; parent.right.document.sakumon.submit()">見直し・提出</a>
+<h3>↑提出はここから</h3><br><br><br>
+
+
+
+
+作った問題を見る<br>
+(別タブが開きます)<br>
+<a href="question.php" target="_blank">問題のみ</a>
+<a href="question_list.php" target="_blank">問題・解答、解説</a><br><br><br>
+
+
+講義資料を見る<br>
+(別タブが開きます)<br>
+<form action="2016prks/pdf_read.php" method="post" style="display: inline" target="_blank">
+<input type="hidden" name="number" value="6">
+<input type="submit" value="6">
+</form>
+
+<form action="2016prks/pdf_read.php" method="post" style="display: inline" target="_blank">
+<input type="hidden" name="number" value="7">
+<input type="submit" value="7">
+</form>
+
+<form action="2016prks/pdf_read.php"method="post" style="display: inline" target="_blank">
+<input type="hidden" name="number" value="8">
+<input type="submit" value="8">
+</form>
+
+<form action="2016prks/pdf_read.php" method="post" style="display: inline" target="_blank">
+<input type="hidden" name="number" value="9">
+<input type="submit" value="9">
+</form>
+<br><br><br><br>
+
+
+<a href='stopped.htm' target="right" onclick="return confirm('現在の問題作成を中止してよろしいですか？')">中止</a><br><br><br>
+
+
+
+
+</BODY>
+</HTML>

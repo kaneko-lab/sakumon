@@ -1,0 +1,29 @@
+<form action="e_insert.php" method="post">
+現在の工程<br>
+  <input type="radio" name="current" value="0">START
+  <input type="radio" name="current" value="2">問題にする内容をまとめる
+  <input type="radio" name="current" value="3">問題文の作成
+  <input type="radio" name="current" value="4">解答の作成
+  <input type="radio" name="current" value="5">解説の作成
+  <input type="radio" name="current" value="6">見直し
+<br>
+<br>
+目的<br>
+<textarea name="purpose" cols="60" rows="5">
+</textarea><br><br><br>
+
+次の工程<br>
+  <input type="radio" name="next" value="1">参考資料を見る
+  <input type="radio" name="next" value="2">問題にする内容をまとめる
+  <input type="radio" name="next" value="3">問題文の作成
+  <input type="radio" name="next" value="4">解答の作成
+  <input type="radio" name="next" value="5">解説の作成
+  <input type="radio" name="next" value="6">見直し
+  <input type="radio" name="next" value="7">提出
+<br><br>
+
+目的<br>
+<textarea name="next_purpose" cols="60" rows="5">
+</textarea><br><br>
+<input type="submit">
+</form>

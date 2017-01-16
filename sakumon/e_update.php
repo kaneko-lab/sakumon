@@ -1,4 +1,5 @@
 <?php
+  include("db_conf.php");
   $current = htmlspecialchars($_GET['current']);
   $next = htmlspecialchars($_GET['next']);
   $pdo = new PDO("mysql:dbname=sakumon3",DB_USER, DB_PW);

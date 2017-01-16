@@ -3,7 +3,7 @@
 <table border="1">
 <tr><th>現在の項目</th><th>何があった</th><th>次の項目</th><th>目的</th><th>修正</th></tr>
 <?php
-
+  include("db_conf.php");
   $procedure = array("START！", "参考資料を見る", "問題にする内容をまとめる", "問題文の作成", "解答(選択肢)の作成", "解説の作成", "見直し", "提出！");
   $pdo = new PDO("mysql:dbname=sakumon3",DB_USER, DB_PW);
   $st = $pdo->query("SELECT * FROM suggestion");

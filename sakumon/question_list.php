@@ -13,6 +13,7 @@
 
 
 <?php
+  include("db_conf.php");
   $pdo = new PDO("mysql:dbname=sakumon3",DB_USER, DB_PW);
   $st = $pdo->query("SELECT * FROM question_list");
   while ($row = $st->fetch()) {

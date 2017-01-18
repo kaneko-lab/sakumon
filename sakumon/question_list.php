@@ -1,4 +1,4 @@
-<h2>問題、解答・解説一覧</h2>
+<h2>問題例、解答・解説一覧</h2>
 
 <table border="1">
 <tr>
@@ -15,7 +15,7 @@
 <?php
   include("db_conf.php");
   $pdo = new PDO("mysql:dbname=sakumon3",DB_USER, DB_PW);
-  $st = $pdo->query("SELECT * FROM question_list");
+  $st = $pdo->query("SELECT * FROM question_list WHERE no >=1 and no <= 4");
   while ($row = $st->fetch()) {
     $no = htmlspecialchars($row['no']);
     $concept = nl2br(htmlspecialchars($row['concept']));

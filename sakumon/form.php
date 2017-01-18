@@ -35,7 +35,7 @@ function setData1()
   $choice2='';
   $choice3='';
   $choice4='';
-  $choice_a='';
+  $choice_a='1';
   $study1='';
   $study2='';
   $study3='';
@@ -166,5 +166,9 @@ if ($_POST) {
 <textarea name="refer" cols="60" rows="5"><?php echo $refer; ?>
 </textarea><br><br>
 
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 </form>
 </html>

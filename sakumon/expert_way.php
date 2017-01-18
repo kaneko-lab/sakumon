@@ -1,5 +1,5 @@
 <table border="1">
-<tr><th>何で詰まった</th><th>次の工程</th><th>目的</th></tr>
+<tr><th>現在の状態</th><th>次の工程</th><th>目的</th></tr>
 <?php
   $httpReferer=$_SERVER['HTTP_REFERER'];
 
